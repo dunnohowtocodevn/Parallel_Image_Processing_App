@@ -20,7 +20,7 @@ This project is a Flask web application that allows users to upload images and p
 5. [Testing with Locust](#testing-with-locust)
 6. [Application Routes](#application-routes)
 7. [Project Structure](#project-structure)
-
+```
 ## Installation
 
 1. **Clone the repository:**
