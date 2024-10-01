@@ -26,7 +26,7 @@ This project is a Flask web application that allows users to upload images and p
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/dunnohowtocodevn/Parallel_Image_Processing_App.git
    cd your-repository
    ```
 
@@ -152,10 +152,3 @@ Here are the main routes in the application:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-### Instructions:
-
-1. Replace `https://github.com/your-username/your-repository.git` with your actual GitHub repository URL.
-2. Adjust the project structure to match your actual directory structure if needed.
-3. Ensure that all required packages are listed in the `requirements.txt` file.
-4. Update the `LICENSE` section if applicable.
