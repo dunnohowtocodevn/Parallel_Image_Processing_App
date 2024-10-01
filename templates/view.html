@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Processed Image</title>
+    <style>
+        /* CSS to display images side by side */
+        .image-container {
+            display: flex;
+            justify-content: space-around; /* Distributes space between images */
+            margin: 20px 0;
+        }
+        .image-container div {
+            display: flex;
+            flex-direction: column; /* Stack heading and image vertically */
+            align-items: center; /* Center align heading and image horizontally */
+        }
+        .image-container img {
+            max-width: 45%; /* Set the image width to 45% of the container */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ccc; /* Optional: Add a border */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visualization */
+            margin-top: 10px; /* Add some space between the heading and image */
+        }
+        h2 {
+            text-align: center;
+            margin: 0; /* Remove margin from the heading */
+        }
+    </style>
+</head>
+<body>
+    <h1>Original and Processed Images</h1>
+    <div class="image-container">
+        <div>
+            <h2>Original Image:</h2>
+            <img src="{{ url_for('get_image', image_id=image_id, image_type='original') }}" alt="Original Image">
+        </div>
+        {% if processed_filename %}
+        <div>
+            <h2>Processed Image:</h2>
+            <img src="{{ url_for('get_image', image_id=image_id, image_type='processed') }}" alt="Processed Image">
+        </div>
+        {% else %}
+        <div>
+            <h2>Processed Image:</h2>
+            <p>Processed image is not available yet.</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

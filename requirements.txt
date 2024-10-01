@@ -1,0 +1,6 @@
+Flask
+Pillow
+SQLAlchemy
+redis
+rq
+locust
