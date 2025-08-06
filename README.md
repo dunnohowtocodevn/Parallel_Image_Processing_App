@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # Flask Image Processing App with Redis and Locust Testing
 
 This project is a Flask web application that allows users to upload images and perform actions (such as grayscale, rotate, etc.) on the uploaded images. The processed images are stored in an SQLite database, and the processing tasks are queued using Redis Queue (RQ) for better performance. Locust is used to simulate concurrent users sending requests to the application.
@@ -20,7 +20,7 @@ This project is a Flask web application that allows users to upload images and p
 5. [Testing with Locust](#testing-with-locust)
 6. [Application Routes](#application-routes)
 7. [Project Structure](#project-structure)
-```
+
 ## Installation
 
 1. **Clone the repository:**
